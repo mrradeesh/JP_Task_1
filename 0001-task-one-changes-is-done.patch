@@ -1,0 +1,547 @@
+From fcae978387244eb8c3e6d0445b7d9c39ef7a6dd1 Mon Sep 17 00:00:00 2001
+From: mrradeesh <mrradeesh18@gmail.com>
+Date: Tue, 21 May 2024 21:39:30 +0530
+Subject: [PATCH] task one changes is done
+
+---
+ README.md                               |   2 +
+ __pycache__/client3.cpython-311.pyc     | Bin 0 -> 1931 bytes
+ __pycache__/client_test.cpython-311.pyc | Bin 0 -> 1507 bytes
+ client3.py                              |  63 +++++
+ client_test.py                          |  25 ++
+ requirements.txt                        |   1 +
+ server3.py                              | 340 ++++++++++++++++++++++++
+ 7 files changed, 431 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 __pycache__/client3.cpython-311.pyc
+ create mode 100644 __pycache__/client_test.cpython-311.pyc
+ create mode 100644 client3.py
+ create mode 100644 client_test.py
+ create mode 100644 requirements.txt
+ create mode 100644 server3.py
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..14926f5
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++# JPMC Task 1
++Starter repo for task 1 of the JPMC software engineering program
+diff --git a/__pycache__/client3.cpython-311.pyc b/__pycache__/client3.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..9be75dfd5882d2e0b76fa30e42b167ca3af66c5e
+GIT binary patch
+literal 1931
+zcmaJBOK2NMbVmD;WJ$K=*iLP$?WDzRlqUWpq;ZXt;KXt;G{%n85HD`TS~IrSmbJ?6
+zx+Pm1MCn0>98?HI&;)!aX-Y1plqSa%LJvJ@gJ{G;!O&A~g7lPA->fXl4m9(5^WMyR
+zZ{Ba_r%0p;L96`n`NC!pp?^40Z;@T()n6E)yNDu+(@3eUSiv6cQv~W$L@Fo}6~9A@
+zOeKJR7NGKqkINf>`Vb4kY+}*_(DMjptsSJs(3g*u5b&YpaGiq*%XJ&jR&#xK|H{Oz
+zmi=@c2R(SXaT9Dmsvn_)_a3CSTKCxYArIanuSA1LLrNQqf(QM|A-Gv)hYo6;6A@C{
+zl@6s-Im`~THr74@8iDg2>SyggU>aZ@0E4U(U=uqGFmyk7PzOf02Rw-|KtF4vk*+-p
+zfog704<PQ3yx4OFTSjkq44QtUcm}dLgW@eOIn$(lWXZC!!~OkfJ*B3XbkiCh8W<Yr
+zzq!VYTjw=;_L~juUx;UFFQy;`ULgVIt9t<Mq99raoeeuSu(gjH&U}qCDm3tees1{Q
+zkP;i5Z;=w#ed~e^c2LO<A+#Z`W4^O4E{NczY@Z=hhECT~jHu}}v6dLgFh&_AU#aOe
+zW)e#$i!8$o)dCJeRZGq4TE-%-WLkP^#r0cyHaV|RSIQb%iq&Y<TzSa@9mlS;kk(Zz
+zF1gapHQizckBu7yfn<$82)s4afP^4Z0zi0seeTlm+;Wy&){R9qLnbmHoH3WQEV&9I
+za~urL%~<*hOHT2dljC6bTq>=xjCHCnd&><kGHVR%o#OTy{FM-XfdU|hcEpiNI9mAl
+z_GB*ccWXz16(`D_A8mbI?(BD32g<DjxrzVTu0%Qux10#sI^u*s%q1$J)<V2E`%o%{
+zPL#wGuRuFW?G+gi9QTUhJwUu-z!dL(0Y2)Rf#O)lJT;IG!Tx|;VitjDYdX;vh!>-z
+zO4JP9#pj8^HBSDF;y%~EdtOK8O@2m*!G8xg00FqdH5u(d9)oGV3!vt_zqx?FwR3hQ
+z(43bmp|--A&GRL(+u*;38%QQsRV|ZD+Wu*tHA?ItQ7v*5@-}SC#|Z>~*bW@8*);qb
+z$L)Z36X`WwVf4a9R~So-$Gco{+0-+xY=Hgxs@uF~q|@4bpTXeyn3gNoXjhv4B5`Hb
+z#gkr^JZrfL8FiH<ldh;i=3NPNEHW1-T?q<`ny$aD#SdEaEQ4znbYoSuT+v`Eb!D&K
+zOjq_|WE%WC_o~l;SR;e~rC!B(g$o4|<s004FL<v5BdhQ%((Ih^3GDIrYGwdd1&nd^
+z7{cLPi1!ML<h))%9i{rH$|!g|C&3~Ga=0q{abFeffp!V^RM8%2Lt;2@KNq@6Lf1|t
+zn!j4;E%X-g_ebv>-Mn%8Min(l7jX^daV6SQXus249KSdDB6jk5?Bw?8$0NUtJdHe+
+zpGAIedDh~bnkt`~a$?iv*z}9owdb*GPV9O)cHN22mZP(Ic_(nO(h`M?cYqB-kb-6o
+z^NGsf+3na9<_wON2gjUnUp`Uztf)QgsC2)dA1|EVybRAJpU5YktnvO-<GnPk?2b9L
+zR2yycPB>K#r%K+~2}JTzez`bQ9NHRxc>2f7+n+w^{q?NVGg|H$b(%+=z=d+)LdhG|
+QE+lqC460(oVJ{#50dX1MiU0rr
+
+literal 0
+HcmV?d00001
+
+diff --git a/__pycache__/client_test.cpython-311.pyc b/__pycache__/client_test.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..0c8841f155dfaffebcf2b1f41f8eeddf0952539c
+GIT binary patch
+literal 1507
+zcmcIk&1(}u6rY{lO=3;cRzz(rx)ue4G$g4STeS4cR-vs*doiRgYi3N>Y&LOsqZkk(
+zRPd&rym(fN;Msq`izo!~Q0Am~C`AvEc<RabHfj9mK|Hv#^PBhP&F{^7^Je#1XJ-e2
+z=gsTcYY!AcKBKbrs4bykgYcLz!X%5Naio@1plK=*N@fU?R|r!$xh`)JpMvzFt)&&N
+zGBr=p>hw?oD+BG7AiUU8hy*(<_&plfz}fkzB*HoFO&OkXv1r;}w!IbvsiidfKzIy(
+z(-I?T%A^&NmKg<9n7lxuis+cMOm2IN-1V|sEF=e^W1Njq0LV~cl*vyhQ<%yEz7%93
+zw&RJ)I@r#ZCCoZomIzvM^bYI_yL8Rx-o1rq_R84CVQ{xfg<5jVEEkGvR`_OLGM*S7
+zj3);Z2`!l%iJu%9ipNf*lE+UBtslJi<<hGIKr8@pGZK#_;={wK<0pqxsZ>J9;}ess
+zst9_;l5V(pvBNV9kcm+!HRrCHOi<{m>lL&4^{?RSULKr5J<0mHPnF#-Z!L{&TmntV
+zQ)j1FF*L>H)-@5hQ7(Gib+I;@wmC5~lDS^e=88_vu(k8H#~s^UHcQ$fY@0zyWEQ+)
+zp6eGeF@2hImdW}@tAiUaR=O=T6!c$fre_T+Teb|3`>e{bpT&s%Z82WK#v_0#`PhHx
+zd9t=EhVPlnwbIQxA>(w4!jO~B{xZzbCDfK_0f(U7!nOW^=i}S>lTBjFjX%uNj6X>&
+zpV{;RsLGK*b-ErR>S#?l(}1AJf4@v`m&P2tq)rH7CqfvZ6Cr}oh0u+#2VpP5K7?Kb
+z{4$*V2>k%9Iy(nJ7Ky)|{e;P891dl37MBfs+|5@`|3l@rvHiFYVJHIt^HEiVblo-z
+zT-Qa1t`~}|Y@r<1^&4fwYFZo(3HUiRvp}jJzJoWz2fXEO9H826b*jpvb<&1NTk_|+
+ziF~R?Q+^!23yh>-n6|D*gCbP6O%KmT1e;fT$iZKP2ra_gq~Y@B)<<woLDnCUZH7)a
+za~X98VGaInTo<4&OOmukx~hI#BU<hEx2|+cr|M)oJlyx8XW$zezW=lyB}({y<-Ocn
+blY7^cp6a=kxw{uuE>!(imx<B`20z0e#2kx_
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+new file mode 100644
+index 0000000..aca3e51
+--- /dev/null
++++ b/client3.py
+@@ -0,0 +1,63 @@
++################################################################################
++#
++#  Permission is hereby granted, free of charge, to any person obtaining a
++#  copy of this software and associated documentation files (the "Software"),
++#  to deal in the Software without restriction, including without limitation
++#  the rights to use, copy, modify, merge, publish, distribute, sublicense,
++#  and/or sell copies of the Software, and to permit persons to whom the
++#  Software is furnished to do so, subject to the following conditions:
++#
++#  The above copyright notice and this permission notice shall be included in
++#  all copies or substantial portions of the Software.
++#
++#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
++#  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++#  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
++#  DEALINGS IN THE SOFTWARE.
++
++import json
++import random
++import urllib.request
++
++# Server API URLs
++QUERY = "http://localhost:8080/query?id={}"
++
++# 500 server request
++N = 500
++
++
++def getDataPoint(quote):
++    """ Produce all the needed values to generate a datapoint """
++    """ ------------- Update this function ------------- """
++    stock = quote['stock']
++    bid_price = float(quote['top_bid']['price'])
++    ask_price = float(quote['top_ask']['price'])
++    price = (bid_price+ask_price)/2
++    return stock, bid_price, ask_price, price
++
++
++def getRatio(price_a, price_b):
++    """ Get ratio of price_a and price_b """
++    """ ------------- Update this function ------------- """
++    if price_b==0:
++        return
++    return price_a/price_b
++
++
++# Main
++if __name__ == "__main__":
++    # Query the price once every N seconds.
++    for _ in iter(range(N)):
++        quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
++
++        """ ----------- Update to get the ratio --------------- """
++        prices={}
++        for quote in quotes:
++            stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock]=price
++            print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
++
++        print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+diff --git a/client_test.py b/client_test.py
+new file mode 100644
+index 0000000..af2bf26
+--- /dev/null
++++ b/client_test.py
+@@ -0,0 +1,25 @@
++import unittest
++from client3 import getDataPoint
++
++class ClientTest(unittest.TestCase):
++  def test_getDataPoint_calculatePrice(self):
++    quotes = [
++      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++    ]
++    """ ------------ Add the assertion below ------------ """
++
++  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
++    quotes = [
++      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++    ]
++    """ ------------ Add the assertion below ------------ """
++
++
++  """ ------------ Add more unit tests ------------ """
++
++
++
++if __name__ == '__main__':
++    unittest.main()
+diff --git a/requirements.txt b/requirements.txt
+new file mode 100644
+index 0000000..f678e82
+--- /dev/null
++++ b/requirements.txt
+@@ -0,0 +1 @@
++python-dateutil==2.8.2
+\ No newline at end of file
+diff --git a/server3.py b/server3.py
+new file mode 100644
+index 0000000..1836de2
+--- /dev/null
++++ b/server3.py
+@@ -0,0 +1,340 @@
++################################################################################
++#
++#  Permission is hereby granted, free of charge, to any person obtaining a
++#  copy of this software and associated documentation files (the "Software"),
++#  to deal in the Software without restriction, including without limitation
++#  the rights to use, copy, modify, merge, publish, distribute, sublicense,
++#  and/or sell copies of the Software, and to permit persons to whom the
++#  Software is furnished to do so, subject to the following conditions:
++#
++#  The above copyright notice and this permission notice shall be included in
++#  all copies or substantial portions of the Software.
++#
++#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
++#  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++#  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
++#  DEALINGS IN THE SOFTWARE.
++
++import csv
++# from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
++import http.server
++import json
++import operator
++import os.path
++import re
++import threading
++from datetime import timedelta, datetime
++# from itertools import izip
++from random import normalvariate, random
++from socketserver import ThreadingMixIn
++
++import dateutil.parser
++
++################################################################################
++#
++# Config
++
++# Sim params
++
++REALTIME = True
++SIM_LENGTH = timedelta(days=365 * 5)
++MARKET_OPEN = datetime.today().replace(hour=0, minute=30, second=0)
++
++# Market parms
++#       min  / max  / std
++SPD = (2.0, 6.0, 0.1)
++PX = (60.0, 150.0, 1)
++FREQ = (12, 36, 50)
++
++# Trades
++
++OVERLAP = 4
++
++
++################################################################################
++#
++# Test Data
++
++def bwalk(min, max, std):
++    """ Generates a bounded random walk. """
++    rng = max - min
++    while True:
++        max += normalvariate(0, std)
++        yield abs((max % (rng * 2)) - rng) + min
++
++
++def market(t0=MARKET_OPEN):
++    """ Generates a random series of market conditions,
++        (time, price, spread).
++    """
++    for hours, px, spd in zip(bwalk(*FREQ), bwalk(*PX), bwalk(*SPD)):
++        yield t0, px, spd
++        t0 += timedelta(hours=abs(hours))
++
++
++def orders(hist):
++    """ Generates a random set of limit orders (time, side, price, size) from
++        a series of market conditions.
++    """
++    for t, px, spd in hist:
++        stock = 'ABC' if random() > 0.5 else 'DEF'
++        side, d = ('sell', 2) if random() > 0.5 else ('buy', -2)
++        order = round(normalvariate(px + (spd / d), spd / OVERLAP), 2)
++        size = int(abs(normalvariate(0, 100)))
++        yield t, stock, side, order, size
++
++
++################################################################################
++#
++# Order Book
++
++def add_book(book, order, size, _age=10):
++    """ Add a new order and size to a book, and age the rest of the book. """
++    yield order, size, _age
++    for o, s, age in book:
++        if age > 0:
++            yield o, s, age - 1
++
++
++def clear_order(order, size, book, op=operator.ge, _notional=0):
++    """ Try to clear a sized order against a book, returning a tuple of
++        (notional, new_book) if successful, and None if not.  _notional is a
++        recursive accumulator and should not be provided by the caller.
++    """
++    (top_order, top_size, age), tail = book[0], book[1:]
++    if op(order, top_order):
++        _notional += min(size, top_size) * top_order
++        sdiff = top_size - size
++        if sdiff > 0:
++            return _notional, list(add_book(tail, top_order, sdiff, age))
++        elif len(tail) > 0:
++            return clear_order(order, -sdiff, tail, op, _notional)
++
++
++def clear_book(buy=None, sell=None):
++    """ Clears all crossed orders from a buy and sell book, returning the new
++        books uncrossed.
++    """
++    while buy and sell:
++        order, size, _ = buy[0]
++        new_book = clear_order(order, size, sell)
++        if new_book:
++            sell = new_book[1]
++            buy = buy[1:]
++        else:
++            break
++    return buy, sell
++
++
++def order_book(orders, book, stock_name):
++    """ Generates a series of order books from a series of orders.  Order books
++        are mutable lists, and mutating them during generation will affect the
++        next turn!
++    """
++    for t, stock, side, order, size in orders:
++        if stock_name == stock:
++            new = add_book(book.get(side, []), order, size)
++            book[side] = sorted(new, reverse=side == 'buy', key=lambda x: x[0])
++        bids, asks = clear_book(**book)
++        yield t, bids, asks
++
++
++################################################################################
++#
++# Test Data Persistence
++
++def generate_csv():
++    """ Generate a CSV of order history. """
++    with open('test.csv', 'wb') as f:
++        writer = csv.writer(f)
++        for t, stock, side, order, size in orders(market()):
++            if t > MARKET_OPEN + SIM_LENGTH:
++                break
++            writer.writerow([t, stock, side, order, size])
++
++
++def read_csv():
++    """ Read a CSV or order history into a list. """
++    with open('test.csv', 'rt') as f:
++        for time, stock, side, order, size in csv.reader(f):
++            yield dateutil.parser.parse(time), stock, side, float(order), int(size)
++
++
++################################################################################
++#
++# Server
++
++class ThreadedHTTPServer(ThreadingMixIn, http.server.HTTPServer):
++    """ Boilerplate class for a multithreaded HTTP Server, with working
++        shutdown.
++    """
++    allow_reuse_address = True
++
++    def shutdown(self):
++        """ Override MRO to shutdown properly. """
++        self.socket.close()
++        http.server.HTTPServer.shutdown(self)
++
++
++def route(path):
++    """ Decorator for a simple bottle-like web framework.  Routes path to the
++        decorated method, with the rest of the path as an argument.
++    """
++
++    def _route(f):
++        setattr(f, '__route__', path)
++        return f
++
++    return _route
++
++
++def read_params(path):
++    """ Read query parameters into a dictionary if they are parseable,
++        otherwise returns None.
++    """
++    query = path.split('?')
++    if len(query) > 1:
++        query = query[1].split('&')
++        return dict(map(lambda x: x.split('='), query))
++
++
++def get(req_handler, routes):
++    """ Map a request to the appropriate route of a routes instance. """
++    for name, handler in routes.__class__.__dict__.items():
++        if hasattr(handler, "__route__"):
++            if None != re.search(handler.__route__, req_handler.path):
++                req_handler.send_response(200)
++                req_handler.send_header('Content-Type', 'application/json')
++                req_handler.send_header('Access-Control-Allow-Origin', '*')
++                req_handler.end_headers()
++                params = read_params(req_handler.path)
++                data = json.dumps(handler(routes, params)) + '\n'
++                req_handler.wfile.write(bytes(data, encoding='utf-8'))
++                return
++
++
++def run(routes, host='0.0.0.0', port=8080):
++    """ Runs a class as a server whose methods have been decorated with
++        @route.
++    """
++
++    class RequestHandler(http.server.BaseHTTPRequestHandler):
++        def log_message(self, *args, **kwargs):
++            pass
++
++        def do_GET(self):
++            get(self, routes)
++
++    server = ThreadedHTTPServer((host, port), RequestHandler)
++    thread = threading.Thread(target=server.serve_forever)
++    thread.daemon = True
++    thread.start()
++    print('HTTP server started on port 8080')
++    while True:
++        from time import sleep
++        sleep(1)
++    server.shutdown()
++    server.start()
++    server.waitForThread()
++
++
++################################################################################
++#
++# App
++
++ops = {
++    'buy': operator.le,
++    'sell': operator.ge,
++}
++
++
++class App(object):
++    """ The trading game server application. """
++
++    def __init__(self):
++        self._book_1 = dict()
++        self._book_2 = dict()
++        self._data_1 = order_book(read_csv(), self._book_1, 'ABC')
++        self._data_2 = order_book(read_csv(), self._book_2, 'DEF')
++        self._rt_start = datetime.now()
++        self._sim_start, _, _ = next(self._data_1)
++        self.read_10_first_lines()
++
++    @property
++    def _current_book_1(self):
++        for t, bids, asks in self._data_1:
++            if REALTIME:
++                while t > self._sim_start + (datetime.now() - self._rt_start):
++                    yield t, bids, asks
++            else:
++                yield t, bids, asks
++
++    @property
++    def _current_book_2(self):
++        for t, bids, asks in self._data_2:
++            if REALTIME:
++                while t > self._sim_start + (datetime.now() - self._rt_start):
++                    yield t, bids, asks
++            else:
++                yield t, bids, asks
++
++    def read_10_first_lines(self):
++        for _ in iter(range(10)):
++            next(self._data_1)
++            next(self._data_2)
++
++    @route('/query')
++    def handle_query(self, x):
++        """ Takes no arguments, and yields the current top of the book;  the
++            best bid and ask and their sizes
++        """
++        try:
++            t1, bids1, asks1 = next(self._current_book_1)
++            t2, bids2, asks2 = next(self._current_book_2)
++        except Exception as e:
++            print("error getting stocks...reinitalizing app")
++            self.__init__()
++            t1, bids1, asks1 = next(self._current_book_1)
++            t2, bids2, asks2 = next(self._current_book_2)
++        t = t1 if t1 > t2 else t2
++        print('Query received @ t%s' % t)
++        return [{
++            'id': x and x.get('id', None),
++            'stock': 'ABC',
++            'timestamp': str(t),
++            'top_bid': bids1 and {
++                'price': bids1[0][0],
++                'size': bids1[0][1]
++            },
++            'top_ask': asks1 and {
++                'price': asks1[0][0],
++                'size': asks1[0][1]
++            }
++        },
++            {
++                'id': x and x.get('id', None),
++                'stock': 'DEF',
++                'timestamp': str(t),
++                'top_bid': bids2 and {
++                    'price': bids2[0][0],
++                    'size': bids2[0][1]
++                },
++                'top_ask': asks2 and {
++                    'price': asks2[0][0],
++                    'size': asks2[0][1]
++                }
++            }]
++
++
++################################################################################
++#
++# Main
++
++if __name__ == '__main__':
++    if not os.path.isfile('test.csv'):
++        print("No data found, generating...")
++        generate_csv()
++    run(App())
+-- 
+2.43.0.windows.1
+
